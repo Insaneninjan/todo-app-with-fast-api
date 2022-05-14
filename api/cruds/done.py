@@ -24,5 +24,5 @@ async def create_done(db: AsyncSession, task_id: int) -> task_model.Done:
 
 
 async def delete_done(db: AsyncSession, original: task_model.Done) -> None:
-  await db.delete()
+  await db.delete(original)
   await db.commit()
