@@ -5,6 +5,9 @@ TODOアプリをFast-APIで構築
 ```
 # コンテナ起動
 % docker-compose up
+
+# テスト実行
+% docker-compose run --entrypoint "poetry run pytest" demo-app
 ```
 - docker-compose.yaml
 	docker-composeの定義ファイル。この中で、Dockerfileを呼び出して、Dockerコンテナのビルド
